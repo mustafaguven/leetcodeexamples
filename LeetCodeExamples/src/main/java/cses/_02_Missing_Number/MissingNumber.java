@@ -4,14 +4,17 @@ import java.util.Arrays;
 
 public class MissingNumber {
 
+  private static final int N = 8;
+  private static final Integer[] array = new Integer[] {2, 5, 4, 1, 6, 7, 8};
+
   public static void main(String[] args) {
-    int n = 8;
-    var array = new Integer[] {2, 5, 4, 1, 6, 7, 8};
-    solution(n, Arrays.stream(array).mapToInt(i -> i).toArray());
+    var mn = new MissingNumber();
+    mn.solution(N, Arrays.stream(array).mapToInt(i -> i).toArray());
   }
 
-  private static void solution(int n, int[] arr) {
-    //total should be below by the consecutive numbers law
+  private void solution(int n, int[] arr) {
+    // total of the items in the array within the missing number should be below by the consecutive
+    // numbers law
     var total = (n * (n + 1) / 2);
     for (int number : arr) {
       total -= number;
