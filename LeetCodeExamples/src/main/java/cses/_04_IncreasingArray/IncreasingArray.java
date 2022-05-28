@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class IncreasingArray {
 
-  public final Integer[] array = new Integer[] {3, 2, 5, 1, 7};
+  public final Integer[] array = new Integer[] {3, 2, 5, 1, 7, 4, 9, 1, 12};
 
   public static void main(String[] args) {
     var ia = new IncreasingArray();
