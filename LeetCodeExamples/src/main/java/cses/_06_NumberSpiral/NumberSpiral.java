@@ -20,8 +20,9 @@ public class NumberSpiral {
     spiral[2][0] = 5;
     // sablon
     // hareket sayisi cift ise hareket sayisi kadar saga ve yukari git sonra 1 saga gec
-    // hareket sayisi tek ise hareket sayisi kadar asagi ve sola git sonra 1 asagiya gec
+    // hareket sayisi tek ise hareket sayisi kadar asagi ve sola git
 
+    // template starts below
     int move = 2, counter = 5;
     for (int i = 2; i < N; i++) {
       if (move % 2 == 0) {
@@ -36,7 +37,7 @@ public class NumberSpiral {
           counter++;
         }
 
-        //tekrar saga
+        // tekrar saga
         if (move < N - 1) {
           spiral[0][move + 1] = counter;
           counter++;
