@@ -1,4 +1,4 @@
-package _3_FindTheIndexOfTheLargeInteger;
+package leetcode._3_FindTheIndexOfTheLargeInteger;
 
 public interface ArrayReader {
   // Compares the sum of arr[l..r] with the sum of arr[x..y]

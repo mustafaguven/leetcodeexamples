@@ -1,4 +1,4 @@
-package _3_FindTheIndexOfTheLargeInteger;
+package leetcode._3_FindTheIndexOfTheLargeInteger;
 
 public class FindTheIndexOfTheLargeInteger implements ArrayReader {
 
